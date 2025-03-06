@@ -80,8 +80,7 @@ li a {
   text-decoration: none;
 }
 
-li {
-  display: inline;
+nav li {
   text-transform: capitalize;
 }
 
@@ -97,7 +96,6 @@ section {
   grid-template-rows: 80px auto 2fr;
   grid-column-gap: 0px;
   grid-row-gap: 40px;
-  border: 1px solid #000;
   height: 200vh;
   grid-template-areas:
     ". . h2 . ."
@@ -140,9 +138,14 @@ article h3 {
 h3 {
   font-size: 1.5rem;
 }
+
 p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+
+article ul {
+  list-style-position: inside;
 }
 
 /*======= 4. FOOTER ========*/
