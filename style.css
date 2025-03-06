@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/*======= TABLE OF CONTENTS | INDEX ========
+1.  General Styles
+2.  HEAD // NAV
+3.  
+4.  
+5.  
+=========================================*/
+
+/*======= 1. General Styles ========*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #000;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+/*======= 2. HEAD // NAV ========*/
+.nav-menu {
+  position: fixed;
+  bottom: 70px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  display: block;
+}
+
+.nav-menu a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.floating-buttons button {
+  background: #333;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: none; /* Initially hidden */
+}
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.floating-buttons button:hover {
+  background: #555;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+  text-transform: capitalize;
+}
+
+/*======= 3. SECTION ========*/
+
+.intro-img {
+  max-width: 500px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 100px 600px 100px 1fr;
+  grid-template-rows: 80px auto 2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 40px;
+  border: 1px solid #000;
+  height: 200vh;
+  grid-template-areas:
+    ". . h2 . ."
+    ". . figure . ."
+    ". article article article .";
+}
+section h2 {
+  grid-area: h2;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+section figure {
+  grid-area: figure;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+figure img {
+  max-width: 400px;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+article {
+  grid-area: article;
+}
+
+article h3 {
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/*======= 4. FOOTER ========*/
+
+footer {
+  color: #000;
+  text-align: center;
+  padding: 1rem;
+}
