@@ -94,9 +94,8 @@ section {
   display: grid;
   grid-template-columns: 1fr 100px 600px 100px 1fr;
   grid-template-rows: 80px auto 2fr;
-  grid-column-gap: 0px;
   grid-row-gap: 40px;
-  height: 200vh;
+  height: 120vh;
   grid-template-areas:
     ". . h2 . ."
     ". . figure . ."
