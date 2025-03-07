@@ -28,7 +28,7 @@ function loadIndex() {
   const indexMenu = document.getElementById("index-menu");
   const navLinks = document.querySelectorAll("#navMenu a");
   navLinks.forEach((link) => {
-    const indexP = document.createElement("p");
+    const indexP = document.createElement("li");
     indexP.innerHTML = `<a href="${link.href}">${link.textContent}</a>`;
     indexMenu.append(indexP);
   });
