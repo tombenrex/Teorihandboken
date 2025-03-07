@@ -90,9 +90,8 @@ nav li {
   max-width: 500px;
 }
 
-section {
+/* section {
   display: grid;
-  border-bottom: 2px solid black;
   grid-template-columns: 1fr 100px 600px 100px 1fr;
   grid-template-rows: auto auto 2fr;
   grid-row-gap: 40px;
@@ -102,6 +101,20 @@ section {
     ". . figure . ."
     ". article article article .";
 }
+ */
+section {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 100px 600px 100px;
+  grid-template-rows: auto auto 2fr;
+  grid-row-gap: 40px;
+  height: 150vh;
+  grid-template-areas:
+    "h2 h2 h2"
+    ". figure ."
+    "article article article";
+}
+
 section h2 {
   grid-area: h2;
   text-align: center;
