@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /*======= TABLE OF CONTENTS | INDEX ========
 1.  General Styles
 2.  HEAD // NAV
-3.  
+3.  Section
 4.  
 5.  
 =========================================*/
@@ -24,7 +23,7 @@ body {
   line-height: 1.6;
   font-size: 1rem;
   color: #000;
-  background-color: #fff;
+  background-color: #6b867e;
   min-height: 100vh;
 }
 
@@ -61,8 +60,9 @@ body {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  display: none; /* Initially hidden */
+  display: none;
 }
+
 .floating-buttons {
   position: fixed;
   bottom: 20px;
@@ -84,6 +84,10 @@ nav li {
   text-transform: capitalize;
 }
 
+nav ul {
+  list-style: none;
+}
+
 /*======= 3. SECTION ========*/
 
 .intro-img {
@@ -102,13 +106,36 @@ nav li {
     ". article article article .";
 }
  */
-section {
+/*section {
   display: grid;
   justify-content: center;
   grid-template-columns: 100px 600px 100px;
   grid-template-rows: auto auto 2fr;
   grid-row-gap: 40px;
   height: 150vh;
+   grid-template-areas: ;
+      "h2 h2 h2"
+    ". figure ."
+    "article article article"; 
+}*/
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  border-left: solid 1px #000;
+  border-right: solid 1px #000;
+  border-bottom: solid 1px #000;
+  grid-template-columns: 50px 600px 50px;
+  grid-template-rows: 100px 500px auto;
+  align-items: center;
+  display: grid;
+  height: 180vh;
+  padding: 2rem;
+  background-color: #c9d8cd;
   grid-template-areas:
     "h2 h2 h2"
     ". figure ."
@@ -119,7 +146,6 @@ section h2 {
   grid-area: h2;
   text-align: center;
   font-size: 3rem;
-  font-family: "roboto", sans-serif;
   text-transform: uppercase;
 }
 
@@ -133,7 +159,9 @@ section figure {
 }
 
 figure img {
-  width: 400px;
+  overflow: hidden;
+  max-width: 500px;
+  max-height: 300px;
 }
 
 .two-img {
@@ -168,16 +196,34 @@ h3 {
 
 p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
 }
 
 article ul {
   list-style-position: inside;
 }
+article p {
+  margin-bottom: 5rem;
+}
 
 /*======= 4. FOOTER ========*/
 
-footer {
-  color: #000;
+/* footer {
+  display: flex;
   text-align: center;
+  justify-content: center;
+}
+
+footer p {
+  background-color: #c9d8cd;
+  width: 800px;
+}
+
+:where(footer p, .grid-container) {
+  border-right: solid 1px #000;
+}
+ */
+
+footer {
+  text-align: center;
+  margin-top: -3rem;
 }
