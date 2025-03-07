@@ -30,15 +30,42 @@ body {
 /*======= 2. HEAD // NAV ========*/
 .nav-menu {
   position: fixed;
-  bottom: 70px;
+  top: 80px;
   left: 20px;
-  background: rgba(0, 0, 0, 0.9);
+  background: #16441ab7;
+  border: solid 3px #000;
   color: white;
   padding: 10px;
   border-radius: 5px;
   display: none;
   flex-direction: column;
   gap: 10px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: none;
+  padding: 10px 20px;
+  background-color: #16441a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: none;
+  padding: 10px 20px;
+  background-color: #16441a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .nav-menu a {
@@ -50,30 +77,6 @@ body {
 
 .nav-menu a:hover {
   background: rgba(255, 255, 255, 0.2);
-}
-
-.floating-buttons button {
-  background: #333;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  display: none;
-}
-
-.floating-buttons {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.floating-buttons button:hover {
-  background: #555;
 }
 
 li a {
@@ -88,36 +91,15 @@ nav ul {
   list-style: none;
 }
 
+#index-menu {
+  text-decoration: none;
+}
+
 /*======= 3. SECTION ========*/
 
 .intro-img {
   max-width: 500px;
 }
-
-/* section {
-  display: grid;
-  grid-template-columns: 1fr 100px 600px 100px 1fr;
-  grid-template-rows: auto auto 2fr;
-  grid-row-gap: 40px;
-  height: 150vh;
-  grid-template-areas:
-    ". h2 h2 h2 ."
-    ". . figure . ."
-    ". article article article .";
-}
- */
-/*section {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 100px 600px 100px;
-  grid-template-rows: auto auto 2fr;
-  grid-row-gap: 40px;
-  height: 150vh;
-   grid-template-areas: ;
-      "h2 h2 h2"
-    ". figure ."
-    "article article article"; 
-}*/
 
 section {
   display: flex;
@@ -133,7 +115,7 @@ section {
   grid-template-rows: 100px 500px auto;
   align-items: center;
   display: grid;
-  height: 180vh;
+  /* height: 180vh; */
   padding: 2rem;
   background-color: #c9d8cd;
   grid-template-areas:
@@ -186,42 +168,20 @@ article {
   grid-area: article;
 }
 
-article h3 {
-  text-transform: uppercase;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-p {
-  font-size: 1.2rem;
-}
-
 article ul {
   list-style-position: inside;
 }
-article p {
-  margin-bottom: 5rem;
+
+section h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+section p {
+  font-size: 1.2rem;
 }
 
 /*======= 4. FOOTER ========*/
-
-/* footer {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-
-footer p {
-  background-color: #c9d8cd;
-  width: 800px;
-}
-
-:where(footer p, .grid-container) {
-  border-right: solid 1px #000;
-}
- */
 
 footer {
   text-align: center;

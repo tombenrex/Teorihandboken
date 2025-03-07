@@ -1,3 +1,4 @@
+//Tagit hjälp av GPT
 const backToTopButton = document.getElementById("backToTop");
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
@@ -11,6 +12,7 @@ window.onscroll = function () {
     menuToggle.style.display = "none";
     navMenu.style.display = "none";
   }
+  navMenu.style.display = "none";
 };
 
 menuToggle.addEventListener("click", function () {
@@ -20,3 +22,16 @@ menuToggle.addEventListener("click", function () {
 backToTopButton.addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+// Skrivit själv
+function loadIndex() {
+  const indexMenu = document.getElementById("index-menu");
+  const navLinks = document.querySelectorAll("#navMenu a");
+  navLinks.forEach((link) => {
+    const indexP = document.createElement("p");
+    indexP.innerHTML = `<a href="${link.href}">${link.textContent}</a>`;
+    indexMenu.append(indexP);
+  });
+}
+
+loadIndex();
