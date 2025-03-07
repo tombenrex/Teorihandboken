@@ -24,12 +24,13 @@
             <li><a href="#section4">Javascript</a></li>
             <li><a href="#section5">XML</a></li>
             <li><a href="#section6">Tillgänglighet</a></li>
-            <li><a href="#section7">Internets konstruktion</a></li>
-            <li><a href="#section8">HTTP - Protokollet</a></li>
-            <li><a href="#section9">Front & back end</a></li>
-            <li><a href="#section10">Prestanda påverkan</a></li>
-            <li><a href="#section11">Responsiv design & mobilanpassning</a></li>
-            <li><a href="#section12">Versionshantering & GIT</a></li>
+            <li><a href="#section7">Metadata</a></li>
+            <li><a href="#section8">Internets konstruktion</a></li>
+            <li><a href="#section9">HTTP - Protokollet</a></li>
+            <li><a href="#section10">Front & back end</a></li>
+            <li><a href="#section11">Prestanda påverkan</a></li>
+            <li><a href="#section12">Responsiv design & mobilanpassning</a></li>
+            <li><a href="#section13">Versionshantering & GIT</a></li>
           </ul>
         </nav>
       </div>
@@ -318,16 +319,33 @@
 
     <!-- Section 10 -->
     <section id="section10">
-      <h2>Layouttekniker CSS</h2>
-      <figure>
-        <img src="#" alt="meta code html" />
-        <figcaption></figcaption>
+      <h2>Front & Backend</h2>
+      <figure class="two-img">
+        <img src="img/front.png" alt="meta code html" />
+        <img src="img/back.png" alt="meta code html" />
+        <figcaption class="special-cap">
+          På den vänstra bilden finns en ”front end kod” skriven i HTML.<br />
+          Bilden till höger visar kod för backend som är i Javascript.
+        </figcaption>
       </figure>
       <article>
-        <h3></h3>
-        <p></p>
-        <h3></h3>
-        <p></p>
+        <h3>Frontend</h3>
+        <p>
+          Det vi ser framför oss när vi använder en hemsida kallas för frontend.
+          Själva designen/layouten som är skapat av elementen. Bilder, knappar
+          menyer och funktionaliteten. HTML, JS och CSS är en del av det och
+          använder sig av http för att kunna hämta datan och visa användaren en
+          hemsida.
+        </p>
+        <h3>Backend</h3>
+        <p>
+          Den kod/data vi inte ser och sker ”bakom kulisserna”. Den har en
+          viktig uppgift att sammanlänka informationen som finns tillgänglig och
+          fånga upp. Det kan exempelvis vara information från användare som
+          angett sina uppgifter vid en inloggning. Den tar emot, bearbetar och
+          skickar tillbaka rätt information genom http till frontend som visar
+          upp innehållet.
+        </p>
         <h3></h3>
         <p></p>
         <h3></h3>
@@ -337,39 +355,99 @@
 
     <!-- Section 11 -->
     <section id="section11">
-      <h2>Layouttekniker CSS</h2>
+      <h2>Prestandan & påverkan på hemsidor</h2>
       <figure>
-        <img src="img/layout1.jpg" alt="img" />
-        <figcaption></figcaption>
+        <img src="img/broken.jpg" alt="trasig hårddisk" />
+        <figcaption>
+          En äldre komponent i datorn kan försämra upplevelsen på hemsidan i
+          takt med att utveckling går framåt och allt blir större.
+        </figcaption>
       </figure>
       <article>
-        <h3></h3>
-        <p></p>
-        <h3></h3>
-        <p></p>
-        <h3></h3>
-        <p></p>
-        <h3></h3>
-        <p></p>
+        <h3>Mycket funktioner, inte alltid bra</h3>
+        <p>
+          Det som kan påverka prestandan är allt som väger mycket i megabyte
+          eller gigabyte. Stora bilder, mycket kod och funktioner som
+          hemsidor/servrar ska ta ansvar över. <br /><br />Har domänen/servern
+          hemsidan finns på en dålig uppkoppling påverkas det av längre
+          laddningstider för användaren. <br /><br /><br />Fungerar allt ovan
+          optimalt som det ska men ändå upplevs en sämre prestanda på hemsidan,
+          skulle det kunna vara ens komponenter i datorn som inte är
+          tillräckliga. Uppdateringar av mjukvaran kan också påverka.
+        </p>
+        <h3>Framework</h3>
+        <p>
+          Olika typer av frameworks har också en påverkan på prestandan. Även
+          fast man inte använder all kod behöver den ändå ladda in det beroende
+          på hur allt är uppbyggt.
+        </p>
       </article>
     </section>
 
     <!-- Section 12 -->
     <section id="section12">
-      <h2>Layouttekniker CSS</h2>
+      <h2>Responsiv design</h2>
       <figure>
-        <img src="img/layout1.jpg" alt="img" />
-        <figcaption></figcaption>
+        <img src="img/mobile-pc.jpg" alt="mobiltelefon och en dator" />
+        <figcaption>
+          Responsiv design innebär att innehållet anpassas automatiskt till
+          olika skärmstorlekar samt enheter.
+        </figcaption>
       </figure>
       <article>
-        <h3></h3>
-        <p></p>
-        <h3></h3>
-        <p></p>
-        <h3></h3>
-        <p></p>
-        <h3></h3>
-        <p></p>
+        <p>
+          Genom att använda sig av olika tekniker i sitt utförande av kod så
+          anpassar sig layouten och förblir lika användarvänlig på alla skärmar.
+        </p>
+        <h3>CSS</h3>
+        <p>
+          I CSS används flexbox & grid för att skapa kolumner och radstrukturer.
+          Där storleken bestäms att den ska anpassa sig efter skärmen. På så
+          sätt blir den dynamisk och responsiv.<br />
+          <br />
+          Vi kan även sätta upp speciella regler i något som kallas för media
+          queries. Där kan man exempelvis bestämma att vid 768 pixlar (mindre
+          skärm) och mindre ska något hända. Exempelvis att navigationsmenyn ska
+          tas bort och gömmas under en knapp för att skapa med plats åt
+          innehållet.
+        </p>
+        <h3>HTML</h3>
+        <img src="img/viewport.png" alt="mobiltelefon och en dator" />
+        <p>
+          Detta är något som anges för att säkerhetsställa att en webbsida
+          skalas rätt på mobila enheter.
+        </p>
+      </article>
+    </section>
+    <!-- Section 12 -->
+    <section id="section13">
+      <h2>Versionshantering & GIT</h2>
+      <figure>
+        <img src="img/git.jpg" alt="git logo" />
+        <figcaption>
+          Någonting utvecklare världen över använder. Effektivt verktyg för att
+          få kontroll över sitt utvecklande.
+        </figcaption>
+      </figure>
+      <article>
+        <h3>Vad står GIT för?</h3>
+        <p>
+          GIT har ingen betydelse men utvecklaren
+          <a href="https://sv.wikipedia.org/wiki/Linus_Torvalds"
+            >Linus Torvalds</a
+          >
+          som skapade det sa:<br />
+          <b>”Global Information Tracker”</b> – Om du använder det rätt,<br />
+          <b>”Goddamn Idiotic Tool” </b>– Om du gör något dumt med det.
+        </p>
+        <h3>VCS (Version Control System)</h3>
+        <p>
+          Git är alltså ett versionshanteringssystem som används för att spåra
+          ändringar i kod som skapas. Väldigt bra att använda i större eller
+          mindre projekt när man jobbar tillsammans med andra. Alla ändringar
+          loggas och blir någonting fel kan man gå tillbaka till en tidigare
+          version.
+        </p>
       </article>
     </section>
 
