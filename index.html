@@ -13,461 +13,474 @@
   <body>
     <!-- Menu buttons -->
     <div class="floating-buttons">
-      <button id="menuToggle" class="menu-toggle">☰</button>
-      <button id="backToTop" class="back-to-top">↑ Top</button>
+      <button aria-label="öppna meny" id="menuToggle" class="menu-toggle">
+        ☰
+      </button>
+      <button aria-label="gå till start" id="backToTop" class="back-to-top">
+        ↑ Top
+      </button>
     </div>
     <!-- Header -->
     <header>
-      <div id="navMenu" class="nav-menu">
-        <nav>
-          <ul>
-            <li><a href="#section2">HTML & CSS</a></li>
-            <li><a href="#section3">Layout-tekniker</a></li>
-            <li><a href="#section4">Javascript</a></li>
-            <li><a href="#section5">XML</a></li>
-            <li><a href="#section6">Tillgänglighet</a></li>
-            <li><a href="#section7">Metadata</a></li>
-            <li><a href="#section8">Internets konstruktion</a></li>
-            <li><a href="#section9">HTTP - Protokollet</a></li>
-            <li><a href="#section10">Front & back end</a></li>
-            <li><a href="#section11">Prestanda påverkan</a></li>
-            <li><a href="#section12">Responsiv design & mobilanpassning</a></li>
-            <li><a href="#section13">Versionshantering & GIT</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav id="navMenu" class="nav-menu">
+        <ul>
+          <li><a href="#section2">HTML & CSS</a></li>
+          <li><a href="#section3">Layout-tekniker</a></li>
+          <li><a href="#section4">Javascript</a></li>
+          <li><a href="#section5">XML</a></li>
+          <li><a href="#section6">Tillgänglighet</a></li>
+          <li><a href="#section7">Metadata</a></li>
+          <li><a href="#section8">Internets konstruktion</a></li>
+          <li><a href="#section9">HTTP - Protokollet</a></li>
+          <li><a href="#section10">Front & back end</a></li>
+          <li><a href="#section11">Prestanda påverkan</a></li>
+          <li><a href="#section12">Responsiv design & mobilanpassning</a></li>
+          <li><a href="#section13">Versionshantering & GIT</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- Section 1 -->
-    <section id="section1">
-      <div class="grid-container">
-        <h2>Teorihandboken</h2>
-        <figure>
-          <img
-            src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=640&h=359&dpr=2"
-            alt="img"
-          />
-          <figcaption>Html, css, javascript & webbteknik</figcaption>
-        </figure>
-        <article>
-          <h2>Index</h2>
-          <p id="index-menu"></p>
-        </article>
-      </div>
-    </section>
+    <main>
+      <section id="section1">
+        <div class="grid-container">
+          <h2>Teorihandboken</h2>
+          <h3></h3>
 
-    <!-- Section 2 -->
-    <section id="section2">
-      <div class="grid-container">
-        <h2>HTML & CSS</h2>
-        <figure>
-          <img src="img/house.jpg" alt="red house" />
-          <figcaption>
-            Om vi jämför med ett hus är HTML själva skalet, dvs stommen som
-            håller upp konstruktionen. CSS är det som skapar designen på huset
-            eller målarfärgen på panelen.
-          </figcaption>
-        </figure>
-        <article>
-          <h3>Html</h3>
-          <p>
-            Ett HTML dokument består av olika taggar som ger plats för att skapa
-            innehåll på sidan. Här placerar vi olika element med texter,
-            rubriker, bilder, knappar, formulär för inputs där vi kan skriva in
-            text och mycket mer.
-          </p>
-          <h3>CSS</h3>
-          <p>
-            CSS uppgift är att koppla ihop med HTML elementen för att bestämma
-            vilken färg, storlek, placering de i sin tur ska ha.
-            Användningsområdet är stort men för att beskriva det kort, bestämmer
-            det vilket utseende eller vilka animationer vi vill ha.
-          </p>
-        </article>
-      </div>
-    </section>
+          <figure>
+            <img
+              src="img/code.jpg"
+              alt="html kod som visar en navigation meny"
+            />
+            <figcaption>Skriven av Tom Larsson</figcaption>
+          </figure>
+          <article>
+            <h2>Index</h2>
+            <p id="index-menu"></p>
+          </article>
+        </div>
+      </section>
 
-    <!-- Section 3 -->
-    <section id="section3">
-      <div class="grid-container">
-        <h2>Layouttekniker CSS</h2>
-        <figure>
-          <img
-            src="img/layout1.jpg"
-            alt="papperskort som illustrerar en layout"
-          />
+      <!-- Section 2 -->
+      <section id="section2">
+        <div class="grid-container">
+          <h2>HTML & CSS</h2>
+          <figure>
+            <img src="img/house.jpg" alt="rött hus" />
+            <figcaption>
+              Om vi jämför med ett hus är HTML själva skalet, dvs stommen som
+              håller upp konstruktionen. CSS är det som skapar designen på huset
+              eller målarfärgen på panelen.
+            </figcaption>
+          </figure>
+          <article>
+            <h3>Html</h3>
+            <p>
+              Ett HTML dokument består av olika taggar som ger plats för att
+              skapa innehåll på sidan. Här placerar vi olika element med texter,
+              rubriker, bilder, knappar, formulär för inputs där vi kan skriva
+              in text och mycket mer.
+            </p>
+            <h3>CSS</h3>
+            <p>
+              CSS uppgift är att koppla ihop med HTML elementen för att bestämma
+              vilken färg, storlek, placering de i sin tur ska ha.
+              Användningsområdet är stort men för att beskriva det kort,
+              bestämmer det vilket utseende eller vilka animationer vi vill ha.
+            </p>
+          </article>
+        </div>
+      </section>
 
-          <figcaption>
-            Med hjälp av CSS kan man använda inbyggda layouttekniker för att
-            skapa design/layout. Genom att använda dessa går det att bestämma en
-            generell storlek och höjd som innehållet ska förhålla sig till,
-            därmed anpassar sig innehållet för olika skärmar/enheter.
-          </figcaption>
-        </figure>
-        <article>
-          <h3>CSS Framework</h3>
-          <p>
-            Här importeras kod från färdiga bibliotek, ett nytt sätt att skapa.
-            En stor fördel är att man sparar tid, eftersom det är mer effektivt
-            än att skapa från grunden. Nackdel är att man kanske inte använder
-            sig av all kod, vilket i sin tur skapar större filer som innebär
-            längre laddningstider.
-          </p>
-          <h3>Css float property</h3>
-          <p>
-            Något som användes mer förr. Detta fungerar med alla äldre
-            webbläsare och kräver inte lika mycket kod. Nackdelen är det är
-            svårare att få till en bättre konstruktion och centrera innehållet
-          </p>
-          <h3>Css flexbox</h3>
-          <p>
-            En modern teknik som används idag av utvecklare. Det har fördelar
-            som att det både är lätt att förstå och använda. Fördelaktigt när du
-            vill centrera innehållet eller placera det i en rad.
-          </p>
-          <h3>Css grid</h3>
-          <p>
-            Även denna är en modern teknik som gör det till en fördel om du vill
-            skapa helskärms layouter. En mer avancerad metod där man inte
-            behöver lika mycket html kod för att skapa extra elements som
-            exempelvis flexbox. Med detta kan vi placera element i specifika
-            ”grid-areas”.
-          </p>
-        </article>
-      </div>
-    </section>
+      <!-- Section 3 -->
+      <section id="section3">
+        <div class="grid-container">
+          <h2>Layouttekniker CSS</h2>
+          <figure>
+            <img
+              src="img/layout1.jpg"
+              alt="papperskort som illustrerar en layout"
+            />
 
-    <!-- Section 4 -->
-    <section id="section4">
-      <div class="grid-container">
-        <h2>javascript</h2>
-        <figure>
-          <img src="img/js.png" alt="javascript code" />
-          <figcaption>
-            Världens mest populära språk som används för att skapa dynamiska och
-            interaktiva webbsidor. Ett skriptspråk som körs via klientsidan.
-            Detta genom att manipulera HTML och CSS i realtid via Document
-            Object Model (DOM).
-          </figcaption>
-        </figure>
-        <article>
-          <h3>Stort användningsområde</h3>
-          <p>Några exempel på vad man kan gör med JS:</p>
-          <ul>
-            <li>
-              Hantera användarens input (musklick, tangenttryck, scroll) och
-              koppla dem till funktioner.
-            </li>
-            <li>Validera formulär och beräkna datan.</li>
-            <li>Hämta olika API, importera dessa, skapa i tabeller.</li>
-            <li>Manipulera och byta ut eller skapa nya element i HTML/CSS.</li>
-            <li>Skapa effekter.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+            <figcaption>
+              Med hjälp av CSS kan man använda inbyggda layouttekniker för att
+              skapa design/layout. Genom att använda dessa går det att bestämma
+              en generell storlek och höjd som innehållet ska förhålla sig till,
+              därmed anpassar sig innehållet för olika skärmar/enheter.
+            </figcaption>
+          </figure>
+          <article>
+            <h3>CSS Framework</h3>
+            <p>
+              Här importeras kod från färdiga bibliotek, ett nytt sätt att
+              skapa. En stor fördel är att man sparar tid, eftersom det är mer
+              effektivt än att skapa från grunden. Nackdel är att man kanske
+              inte använder sig av all kod, vilket i sin tur skapar större filer
+              som innebär längre laddningstider.
+            </p>
+            <h3>Css float property</h3>
+            <p>
+              Något som användes mer förr. Detta fungerar med alla äldre
+              webbläsare och kräver inte lika mycket kod. Nackdelen är det är
+              svårare att få till en bättre konstruktion och centrera innehållet
+            </p>
+            <h3>Css flexbox</h3>
+            <p>
+              En modern teknik som används idag av utvecklare. Det har fördelar
+              som att det både är lätt att förstå och använda. Fördelaktigt när
+              du vill centrera innehållet eller placera det i en rad.
+            </p>
+            <h3>Css grid</h3>
+            <p>
+              Även denna är en modern teknik som gör det till en fördel om du
+              vill skapa helskärms layouter. En mer avancerad metod där man inte
+              behöver lika mycket html kod för att skapa extra elements som
+              exempelvis flexbox. Med detta kan vi placera element i specifika
+              ”grid-areas”.
+            </p>
+          </article>
+        </div>
+      </section>
 
-    <!-- Section 5 -->
-    <section id="section5">
-      <div class="grid-container">
-        <h2>xml</h2>
-        <figure>
-          <img src="img/xml.png" alt="xml code" />
-          <figcaption>
-            XML står för Extendible Markup Language. Ett märkesspråk med uppgift
-            att strukturera och klassificera information. Data lagras genom icke
-            fördefinierade taggar. XML är designat för att bära och transportera
-            data.
-          </figcaption>
-        </figure>
-        <article>
-          <h3>samband mellan html & xml</h3>
-          <p>
-            Båda är ”markup språk” vilket innebär att de använder taggar för att
-            definiera element i dokumentet. Skiftlägeskänslig när taggar och
-            attribut anges. Underhålls av W3C (World Wide Web Consoritum).
-          </p>
-          <h3>samband mellan json & xml</h3>
-          <p>
-            Både Json och XML kan användas för att ta emot data från
-            webbservrar. Lättläst text som både människor och datorer förstår.
-            Används stort inom API och är plattformsoberoende.
-          </p>
-        </article>
-      </div>
-    </section>
+      <!-- Section 4 -->
+      <section id="section4">
+        <div class="grid-container">
+          <h2>javascript</h2>
+          <figure>
+            <img src="img/js.png" alt="javascript kod" />
+            <figcaption>
+              Världens mest populära språk som används för att skapa dynamiska
+              och interaktiva webbsidor. Ett skriptspråk som körs via
+              klientsidan. Detta genom att manipulera HTML och CSS i realtid via
+              Document Object Model (DOM).
+            </figcaption>
+          </figure>
+          <article>
+            <h3>Stort användningsområde</h3>
+            <p>Några exempel på vad man kan gör med JS:</p>
+            <ul>
+              <li>
+                Hantera användarens input (musklick, tangenttryck, scroll) och
+                koppla dem till funktioner.
+              </li>
+              <li>Validera formulär och beräkna datan.</li>
+              <li>Hämta olika API, importera dessa, skapa i tabeller.</li>
+              <li>
+                Manipulera och byta ut eller skapa nya element i HTML/CSS.
+              </li>
+              <li>Skapa effekter.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-    <!-- Section 6 -->
-    <section id="section6">
-      <div class="grid-container">
-        <h2>Tillgänglighet</h2>
-        <figure>
-          <img src="img/tillg.jpg" alt="blind person som läser blindskrift" />
-          <figcaption>
-            Idag anpassar vi hemsidorna eller apparna för att göra internet
-            tillgängligt för alla som använder det oavsett vilka förutsättningar
-            användaren har.
-          </figcaption>
-        </figure>
-        <article>
-          <p>
-            Genom att ha en tydlig layout med lätt navigering. Användaren ska
-            kunna justera textstorleken eller färgen för lättare läsbarhet.
-            Alternativa texter till bilder för ”skärmuppläsare” som ska kunna
-            tyda allt innehåll som finns.
-          </p>
-          <p>
-            För de personer som inte kan använda sig av en datormus så ska
-            innehållet kunna navigeras med tangentbordet i stället.
-          </p>
-          <h3>Dos lagen</h3>
-          <p>
-            Lagen om tillgänglighet till digital offentlig service. En lag i
-            Sverige som uppfyller kraven som EU satt. Offentliga men även
-            privata aktörer har denna lag att följa. Allt för att öka
-            tillgängligheten.
-          </p>
-        </article>
-      </div>
-    </section>
-    <!-- Section 7 -->
-    <section id="section7">
-      <div class="grid-container">
-        <h2>Metadata</h2>
-        <figure>
-          <img src="img/metad.png" alt="meta data code in html" />
-          <figcaption>
-            Metadata i allmänhet betyder information om data. Om vi tar bilden
-            ovan som ett exempel vill vi tala om vad som finns i html
-            dokumentet. Vi vill även tala om för webbläsaren på de olika
-            plattformarna vilken skala som ska tillämpas.
-          </figcaption>
-        </figure>
-        <article>
-          <h3>Google eller andra söktjänster</h3>
-          <p>
-            När vår server ligger uppe med metadatan inkluderad använder sig
-            söktjänster som exempelvis Google av denna data. Som i sin tur för
-            vidare informationen till användaren som gjort en sökning inom
-            området. Google använder datan för att kunna kategorisera innehållet
-            rätt.
-          </p>
-        </article>
-      </div>
-    </section>
+      <!-- Section 5 -->
+      <section id="section5">
+        <div class="grid-container">
+          <h2>xml</h2>
+          <figure>
+            <img src="img/xml.png" alt="xml kod" />
+            <figcaption>
+              XML står för Extendible Markup Language. Ett märkesspråk med
+              uppgift att strukturera och klassificera information. Data lagras
+              genom icke fördefinierade taggar. XML är designat för att bära och
+              transportera data.
+            </figcaption>
+          </figure>
+          <article>
+            <h3>samband mellan html & xml</h3>
+            <p>
+              Båda är ”markup språk” vilket innebär att de använder taggar för
+              att definiera element i dokumentet. Skiftlägeskänslig när taggar
+              och attribut anges. Underhålls av W3C (World Wide Web Consoritum).
+            </p>
+            <h3>samband mellan json & xml</h3>
+            <p>
+              Både Json och XML kan användas för att ta emot data från
+              webbservrar. Lättläst text som både människor och datorer förstår.
+              Används stort inom API och är plattformsoberoende.
+            </p>
+          </article>
+        </div>
+      </section>
 
-    <!-- Section 8 -->
-    <section id="section8">
-      <div class="grid-container">
-        <h2>Internets konstruktion</h2>
-        <figure>
-          <img src="img/cable.jpg" alt="cabels into router" />
-          <figcaption></figcaption>
-        </figure>
-        <article>
-          <h3>Internets hårdvara</h3>
-          <p>
-            Internet är ett globalt nätverk sammankopplade med datorer och
-            servrar som kommunicerar med varandra genom olika protokoll. Den
-            fysiska infrastrukturen består av kablar och fiberoptik som i sin
-            tur ansluts av routrar och switchar. Större webbsidor, appar och
-            molntjänster kräver större serverhallar för att kunna ta emot all
-            trafik och hantera datan.
-          </p>
-          <h3>När vi surfar</h3>
-          <p>
-            En hemsida anropas genom att skriva in en URL i adressfältet.
-            Webbläsaren i sin tur gör en DNS-förfrågan för att hitta rätt
-            IP-adress. När den funnit rätt IP svarar servern med en HTML fil som
-            i sin tur innehåller länkar till CSS, JavaScript och bilder.
-          </p>
-          <h3>Förkortningar</h3>
-          <p>
-            DNS = Omvandlar domännamn till ip-adress<br />IP & http = Protokoll
-            som styr hur data skickas och tas emot på internet
-          </p>
-        </article>
-      </div>
-    </section>
+      <!-- Section 6 -->
+      <section id="section6">
+        <div class="grid-container">
+          <h2>Tillgänglighet</h2>
+          <figure>
+            <img src="img/tillg.jpg" alt="blind person som läser blindskrift" />
+            <figcaption>
+              Idag anpassar vi hemsidorna eller apparna för att göra internet
+              tillgängligt för alla som använder det oavsett vilka
+              förutsättningar användaren har.
+            </figcaption>
+          </figure>
+          <article>
+            <p>
+              Genom att ha en tydlig layout med lätt navigering. Användaren ska
+              kunna justera textstorleken eller färgen för lättare läsbarhet.
+              Alternativa texter till bilder för ”skärmuppläsare” som ska kunna
+              tyda allt innehåll som finns.
+            </p>
+            <p>
+              För de personer som inte kan använda sig av en datormus så ska
+              innehållet kunna navigeras med tangentbordet i stället.
+            </p>
+            <h3>Dos lagen</h3>
+            <p>
+              Lagen om tillgänglighet till digital offentlig service. En lag i
+              Sverige som uppfyller kraven som EU satt. Offentliga men även
+              privata aktörer har denna lag att följa. Allt för att öka
+              tillgängligheten.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- Section 7 -->
+      <section id="section7">
+        <div class="grid-container">
+          <h2>Metadata</h2>
+          <figure>
+            <img src="img/metad.png" alt="meta data tag/kod i html" />
+            <figcaption>
+              Metadata i allmänhet betyder information om data. Om vi tar bilden
+              ovan som ett exempel vill vi tala om vad som finns i html
+              dokumentet. Vi vill även tala om för webbläsaren på de olika
+              plattformarna vilken skala som ska tillämpas.
+            </figcaption>
+          </figure>
+          <article>
+            <h3>Google eller andra söktjänster</h3>
+            <p>
+              När vår server ligger uppe med metadatan inkluderad använder sig
+              söktjänster som exempelvis Google av denna data. Som i sin tur för
+              vidare informationen till användaren som gjort en sökning inom
+              området. Google använder datan för att kunna kategorisera
+              innehållet rätt.
+            </p>
+          </article>
+        </div>
+      </section>
 
-    <!-- Section 9 -->
-    <section id="section9">
-      <div class="grid-container">
-        <h2>http-protokoll</h2>
-        <figure>
-          <img src="img/http.png" alt="http adress" />
-          <figcaption>
-            HTTP används när vi fetchar() API:er, skickar formulär, använder
-            inloggningar, tittar på media eller laddar ner filer.
-          </figcaption>
-        </figure>
-        <article>
-          <h3>förfrågan</h3>
-          <p>
-            Protokollet bygger på förfrågan och svar mellan en klient som
-            exempelvis webbläsaren. När vi anger en adress skickar vi en
-            förfrågan som i sin tur hämtar den informationen vi ber om. Det är
-            cookies, webbläsartyp och URL som förfrågan består av.
-          </p>
-          <h3>svaret</h3>
-          <p>
-            Servern tar emot förfrågan och skickar tillbaka den begärda
-            informationen som exempelvis HTML sidan. Vid lyckad hämtning
-            innehåller den statuskoden 200, om inte 404 Not Found.
-          </p>
-          <h3>http eller https?</h3>
-          <p>
-            Genom att använda sig av HTTPS kan man känna sig säkrare då
-            informationen krypteras. På så sätt kan inte lösenord eller annat
-            läcka. Använder inte hemsidan någon HTTP:s bortprioriteras den från
-            google och oftast kommer en varning upp att hemsidan inte är säker.
-          </p>
-          <h3>Förkortningar</h3>
-          <p>
-            <b>HTTP</b> = Hypertext transfer protocol<br />
-            <b>HTTPS</b> = Hypertext transfer protocol secure
-          </p>
-        </article>
-      </div>
-    </section>
+      <!-- Section 8 -->
+      <section id="section8">
+        <div class="grid-container">
+          <h2>Internets konstruktion</h2>
+          <figure>
+            <img src="img/cable.jpg" alt="kablar som går in i nätverk" />
+            <figcaption>
+              En kraftfull dator med en stabil anslutning är bra förutsättningar
+              för och få en trevlig upplevelse online.
+            </figcaption>
+          </figure>
+          <article>
+            <h3>Internets hårdvara</h3>
+            <p>
+              Internet är ett globalt nätverk sammankopplade med datorer och
+              servrar som kommunicerar med varandra genom olika protokoll. Den
+              fysiska infrastrukturen består av kablar och fiberoptik som i sin
+              tur ansluts av routrar och switchar. Större webbsidor, appar och
+              molntjänster kräver större serverhallar för att kunna ta emot all
+              trafik och hantera datan.
+            </p>
+            <h3>När vi surfar</h3>
+            <p>
+              En hemsida anropas genom att skriva in en URL i adressfältet.
+              Webbläsaren i sin tur gör en DNS-förfrågan för att hitta rätt
+              IP-adress. När den funnit rätt IP svarar servern med en HTML fil
+              som i sin tur innehåller länkar till CSS, JavaScript och bilder.
+            </p>
+            <h3>Förkortningar</h3>
+            <p>
+              DNS = Omvandlar domännamn till ip-adress<br />IP & http =
+              Protokoll som styr hur data skickas och tas emot på internet
+            </p>
+          </article>
+        </div>
+      </section>
 
-    <!-- Section 10 -->
-    <section id="section10">
-      <div class="grid-container">
-        <h2>Front & Backend</h2>
-        <figure class="two-img">
-          <img src="img/front.png" alt="meta code html" />
-          <img src="img/back.png" alt="meta code html" />
-          <figcaption class="special-cap">
-            På den vänstra bilden finns en ”front end kod” skriven i HTML.<br />
-            Bilden till höger visar kod för backend som är i Javascript.
-          </figcaption>
-        </figure>
-        <article>
-          <h3>Frontend</h3>
-          <p>
-            Det vi ser framför oss när vi använder en hemsida kallas för
-            frontend. Själva designen/layouten som är skapat av elementen.
-            Bilder, knappar menyer och funktionaliteten. HTML, JS och CSS är en
-            del av det och använder sig av http för att kunna hämta datan och
-            visa användaren en hemsida.
-          </p>
-          <h3>Backend</h3>
-          <p>
-            Den kod/data vi inte ser och sker ”bakom kulisserna”. Den har en
-            viktig uppgift att sammanlänka informationen som finns tillgänglig
-            och fånga upp. Det kan exempelvis vara information från användare
-            som angett sina uppgifter vid en inloggning. Den tar emot, bearbetar
-            och skickar tillbaka rätt information genom http till frontend som
-            visar upp innehållet.
-          </p>
-        </article>
-      </div>
-    </section>
+      <!-- Section 9 -->
+      <section id="section9">
+        <div class="grid-container">
+          <h2>http-protokoll</h2>
+          <figure>
+            <img src="img/http.png" alt="http adress" />
+            <figcaption>
+              HTTP används när vi fetchar() API:er, skickar formulär, använder
+              inloggningar, tittar på media eller laddar ner filer.
+            </figcaption>
+          </figure>
+          <article>
+            <h3>förfrågan</h3>
+            <p>
+              Protokollet bygger på förfrågan och svar mellan en klient som
+              exempelvis webbläsaren. När vi anger en adress skickar vi en
+              förfrågan som i sin tur hämtar den informationen vi ber om. Det är
+              cookies, webbläsartyp och URL som förfrågan består av.
+            </p>
+            <h3>svaret</h3>
+            <p>
+              Servern tar emot förfrågan och skickar tillbaka den begärda
+              informationen som exempelvis HTML sidan. Vid lyckad hämtning
+              innehåller den statuskoden 200, om inte 404 Not Found.
+            </p>
+            <h3>http eller https?</h3>
+            <p>
+              Genom att använda sig av HTTPS kan man känna sig säkrare då
+              informationen krypteras. På så sätt kan inte lösenord eller annat
+              läcka. Använder inte hemsidan någon HTTP:s bortprioriteras den
+              från google och oftast kommer en varning upp att hemsidan inte är
+              säker.
+            </p>
+            <h3>Förkortningar</h3>
+            <p>
+              <b>HTTP</b> = Hypertext transfer protocol<br />
+              <b>HTTPS</b> = Hypertext transfer protocol secure
+            </p>
+          </article>
+        </div>
+      </section>
 
-    <!-- Section 11 -->
-    <section id="section11">
-      <div class="grid-container">
-        <h2>Prestandan & påverkan på hemsidor</h2>
-        <figure>
-          <img src="img/broken.jpg" alt="trasig hårddisk" />
-          <figcaption>
-            En äldre komponent i datorn kan försämra upplevelsen på hemsidan i
-            takt med att utveckling går framåt och allt blir större.
-          </figcaption>
-        </figure>
-        <article>
-          <h3>Mycket funktioner, inte alltid bra</h3>
-          <p>
-            Det som kan påverka prestandan är allt som väger mycket i megabyte
-            eller gigabyte. Stora bilder, mycket kod och funktioner som
-            hemsidor/servrar ska ta ansvar över. <br /><br />Har domänen/servern
-            hemsidan finns på en dålig uppkoppling påverkas det av längre
-            laddningstider för användaren. <br /><br /><br />Fungerar allt ovan
-            optimalt som det ska men ändå upplevs en sämre prestanda på
-            hemsidan, skulle det kunna vara ens komponenter i datorn som inte är
-            tillräckliga. Uppdateringar av mjukvaran kan också påverka.
-          </p>
-          <h3>Framework</h3>
-          <p>
-            Olika typer av frameworks har också en påverkan på prestandan. Även
-            fast man inte använder all kod behöver den ändå ladda in det
-            beroende på hur allt är uppbyggt.
-          </p>
-        </article>
-      </div>
-    </section>
+      <!-- Section 10 -->
+      <section id="section10">
+        <div class="grid-container">
+          <h2>Front & Backend</h2>
+          <figure class="two-img">
+            <img src="img/front.png" alt="Kod i html" />
+            <img src="img/back.png" alt="Kod i javascript" />
+            <figcaption class="special-cap">
+              På den vänstra bilden finns en ”front end kod” skriven i HTML.<br />
+              Bilden till höger visar kod för backend som är i Javascript.
+            </figcaption>
+          </figure>
+          <article>
+            <h3>Frontend</h3>
+            <p>
+              Det vi ser framför oss när vi använder en hemsida kallas för
+              frontend. Själva designen/layouten som är skapat av elementen.
+              Bilder, knappar menyer och funktionaliteten. HTML, JS och CSS är
+              en del av det och använder sig av http för att kunna hämta datan
+              och visa användaren en hemsida.
+            </p>
+            <h3>Backend</h3>
+            <p>
+              Den kod/data vi inte ser och sker ”bakom kulisserna”. Den har en
+              viktig uppgift att sammanlänka informationen som finns tillgänglig
+              och fånga upp. Det kan exempelvis vara information från användare
+              som angett sina uppgifter vid en inloggning. Den tar emot,
+              bearbetar och skickar tillbaka rätt information genom http till
+              frontend som visar upp innehållet.
+            </p>
+          </article>
+        </div>
+      </section>
 
-    <!-- Section 12 -->
-    <section id="section12">
-      <div class="grid-container">
-        <h2>Responsiv design</h2>
-        <figure>
-          <img src="img/mobile-pc.jpg" alt="mobiltelefon och en dator" />
-          <figcaption>
-            Responsiv design innebär att innehållet anpassas automatiskt till
-            olika skärmstorlekar samt enheter.
-          </figcaption>
-        </figure>
-        <article>
-          <p>
-            Genom att använda sig av olika tekniker i sitt utförande av kod så
-            anpassar sig layouten och förblir lika användarvänlig på alla
-            skärmar.
-          </p>
-          <h3>CSS</h3>
-          <p>
-            I CSS används flexbox & grid för att skapa kolumner och
-            radstrukturer. Där storleken bestäms att den ska anpassa sig efter
-            skärmen. På så sätt blir den dynamisk och responsiv.<br />
-            <br />
-            Vi kan även sätta upp speciella regler i något som kallas för media
-            queries. Där kan man exempelvis bestämma att vid 768 pixlar (mindre
-            skärm) och mindre ska något hända. Exempelvis att navigationsmenyn
-            ska tas bort och gömmas under en knapp för att skapa med plats åt
-            innehållet.
-          </p>
-          <h3>HTML</h3>
-          <img src="img/viewport.png" alt="mobiltelefon och en dator" />
-          <p>
-            Detta är något som anges för att säkerhetsställa att en webbsida
-            skalas rätt på mobila enheter.
-          </p>
-        </article>
-      </div>
-    </section>
-    <!-- Section 12 -->
-    <section id="section13">
-      <div class="grid-container">
-        <h2>Versionshantering & GIT</h2>
-        <figure>
-          <img src="img/git.jpg" alt="git logo" />
-          <figcaption>
-            Någonting utvecklare världen över använder. Effektivt verktyg för
-            att få kontroll över sitt utvecklande.
-          </figcaption>
-        </figure>
-        <article>
-          <h3>Vad står GIT för?</h3>
-          <p>
-            GIT har ingen betydelse men utvecklaren
-            <a href="https://sv.wikipedia.org/wiki/Linus_Torvalds"
-              >Linus Torvalds</a
-            >
-            som skapade det sa:<br />
-            <b>”Global Information Tracker”</b> – Om du använder det rätt,<br />
-            <b>”Goddamn Idiotic Tool” </b>– Om du gör något dumt med det.
-          </p>
-          <h3>VCS (Version Control System)</h3>
-          <p>
-            Git är alltså ett versionshanteringssystem som används för att spåra
-            ändringar i kod som skapas. Väldigt bra att använda i större eller
-            mindre projekt när man jobbar tillsammans med andra. Alla ändringar
-            loggas och blir någonting fel kan man gå tillbaka till en tidigare
-            version.
-          </p>
-        </article>
-      </div>
-    </section>
+      <!-- Section 11 -->
+      <section id="section11">
+        <div class="grid-container">
+          <h2>Prestandan & påverkan på hemsidor</h2>
+          <figure>
+            <img src="img/broken.jpg" alt="trasig hårddisk" />
+            <figcaption>
+              En äldre komponent i datorn kan försämra upplevelsen på hemsidan i
+              takt med att utveckling går framåt och allt blir större.
+            </figcaption>
+          </figure>
+          <article>
+            <h3>Mycket funktioner, inte alltid bra</h3>
+            <p>
+              Det som kan påverka prestandan är allt som väger mycket i megabyte
+              eller gigabyte. Stora bilder, mycket kod och funktioner som
+              hemsidor/servrar ska ta ansvar över. <br /><br />Har
+              domänen/servern hemsidan finns på en dålig uppkoppling påverkas
+              det av längre laddningstider för användaren.
+              <br /><br /><br />Fungerar allt ovan optimalt som det ska men ändå
+              upplevs en sämre prestanda på hemsidan, skulle det kunna vara ens
+              komponenter i datorn som inte är tillräckliga. Uppdateringar av
+              mjukvaran kan också påverka.
+            </p>
+            <h3>Framework</h3>
+            <p>
+              Olika typer av frameworks har också en påverkan på prestandan.
+              Även fast man inte använder all kod behöver den ändå ladda in det
+              beroende på hur allt är uppbyggt.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section 12 -->
+      <section id="section12">
+        <div class="grid-container">
+          <h2>Responsiv design</h2>
+          <figure>
+            <img src="img/mobile-pc.jpg" alt="mobiltelefon och en dator" />
+            <figcaption>
+              Responsiv design innebär att innehållet anpassas automatiskt till
+              olika skärmstorlekar samt enheter.
+            </figcaption>
+          </figure>
+          <article>
+            <p>
+              Genom att använda sig av olika tekniker i sitt utförande av kod så
+              anpassar sig layouten och förblir lika användarvänlig på alla
+              skärmar.
+            </p>
+            <h3>CSS</h3>
+            <p>
+              I CSS används flexbox & grid för att skapa kolumner och
+              radstrukturer. Där storleken bestäms att den ska anpassa sig efter
+              skärmen. På så sätt blir den dynamisk och responsiv.<br />
+              <br />
+              Vi kan även sätta upp speciella regler i något som kallas för
+              media queries. Där kan man exempelvis bestämma att vid 768 pixlar
+              (mindre skärm) och mindre ska något hända. Exempelvis att
+              navigationsmenyn ska tas bort och gömmas under en knapp för att
+              skapa med plats åt innehållet.
+            </p>
+            <h3>HTML</h3>
+            <img src="img/viewport.png" alt="meta kod för viewport i html" />
+            <p>
+              Detta är något som anges för att säkerhetsställa att en webbsida
+              skalas rätt på mobila enheter.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- Section 12 -->
+      <section id="section13">
+        <div class="grid-container">
+          <h2>Versionshantering & GIT</h2>
+          <figure>
+            <img src="img/git.jpg" alt="git logo" />
+            <figcaption>
+              Någonting utvecklare världen över använder. Effektivt verktyg för
+              att få kontroll över sitt utvecklande.
+            </figcaption>
+          </figure>
+          <article>
+            <h3>Vad står GIT för?</h3>
+            <p>
+              GIT har ingen betydelse men utvecklaren
+              <a href="https://sv.wikipedia.org/wiki/Linus_Torvalds"
+                >Linus Torvalds</a
+              >
+              som skapade det sa:<br />
+              <b>”Global Information Tracker”</b> – Om du använder det rätt,<br />
+              <b>”Goddamn Idiotic Tool” </b>– Om du gör något dumt med det.
+            </p>
+            <h3>VCS (Version Control System)</h3>
+            <p>
+              Git är alltså ett versionshanteringssystem som används för att
+              spåra ändringar i kod som skapas. Väldigt bra att använda i större
+              eller mindre projekt när man jobbar tillsammans med andra. Alla
+              ändringar loggas och blir någonting fel kan man gå tillbaka till
+              en tidigare version.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
     <!-- Footer -->
     <footer>
       <p>
